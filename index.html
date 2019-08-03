@@ -257,10 +257,35 @@
                </nav>
           </header>
 
-          <main>
-               
+          <main class="my-5 d-none">
+               <div class="container">
+                    <div class="row">
+                         <div class="col-3">
+                              <h2 class="m-3 ">Categorias</h2>
+                              <ul class="list-group nav flex-column" id="section" role="tablist" aria-orientation="vertical">
+                                   <a href="#001" class="list-group-item list-group-item-secondary list-group-item-action nav-link active" id="001-tab" data-toggle="pill" aria-selected="true">Entradas</a>
+                                   <a href="#002" class="list-group-item btn-hako list-group-item-action nav-link" id="002-tab" data-toggle="pill" aria-selected="true">Service</a>
+                                   <li class="list-group-item">Cardápio</li>
+                                   <li class="list-group-item">Combinados</li>
+                                   <li class="list-group-item">Yakisoba</li>
+                                   <li class="list-group-item">Refeição Executiva</li>
+                                   <li class="list-group-item">Bebidas</li>
+                              </ul>
+                         </div>
+                         <div class="col-9">
+                              <div class="tab-content" id="tab-content">
+                                   <div class="tab-pane fade show active" id="001" role="tabpanel" aria-labelledby="001-tab">
+                                        Teste 001
+                                   </div>
+                                   <div class="tab-pane fade show" id="002" role="tabpanel" aria-labelledby="002-tab">
+                                        Teste 002
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
           </main>
-          <main class="d-none">
+          <main class="">
                <div id="myCarousel" class="carousel slide carousel-fade pt-5 bg-hako d-none d-md-block" data-ride="carousel">
                     <div class="carousel-inner">
                          <div class="carousel-item active">
