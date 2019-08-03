@@ -16,10 +16,12 @@
                .btn-hako
                {
                     background: #9F0d0f;
+                    color: white;
                }
                .btn-hako:hover
                {
                     background: #700d0f;
+                    color: white;
                }
                .text-hako
                {
@@ -210,10 +212,10 @@
                               <a class="nav-link" href="index.html"><i class="fa fa-home d-md-none">&nbsp;&nbsp;&nbsp;</i>Página Inicial</a>
                          </li>                         
                          <li class="nav-item align-self-center">
-                              <a class="nav-link" href="about.html"><i class="fa fa-info-circle d-md-none">&nbsp;&nbsp;&nbsp;</i>Sobre</a>
+                              <a class="nav-link" href="#" data-toggle="modal" data-target="#aboutModal"><i class="fa fa-info-circle d-md-none">&nbsp;&nbsp;&nbsp;</i>Sobre</a>
                          </li>                         
                          <li class="nav-item align-self-center">
-                              <a class="nav-link" href="contact.html"><i class="fa fa-phone d-md-none">&nbsp;&nbsp;&nbsp;</i>Contato</a>
+                              <a class="nav-link" href="#" data-toggle="modal" data-target="#formModal"><i class="fa fa-phone d-md-none">&nbsp;&nbsp;&nbsp;</i>Contato</a>
                          </li>                         
                          <li class="nav-item align-self-center">
                               <a class="nav-link" href="menu.html"><i class="fa fa-cutlery d-md-none">&nbsp;&nbsp;&nbsp;</i>Cardápio</a>
@@ -234,21 +236,21 @@
                          </li>
                     </ul>
                </nav>
-               <nav class="navbar d-md-none fixed-bottom navbar-light bg-light nav justify-content-around">
+               <nav class="navbar d-md-none fixed-bottom navbar-light bg-light justify-content-around">
                     <ul class="list-inline m-0">                     
                          <li class="nav-item align-self-center list-inline-item">
-                              <a class="nav-link text-danger text-center small" href="about.html">
-                                   <i class="fa fa-info-circle d-md-none"></i><br/><small>Sobre</small>
+                              <a class="nav-link text-hako text-center small" href="#" data-toggle="modal" data-target="#aboutModal">
+                                   <i class="fa fa-info-circle"></i><br/><small>Sobre</small>
                               </a>
                          </li>                         
                          <li class="nav-item align-self-center list-inline-item">
-                              <a class="nav-link text-danger text-center small" href="contact.html">
-                                   <i class="fa fa-phone d-md-none"></i><br/><small>Contato</small>
+                              <a class="nav-link text-hako text-center small" href="#" data-toggle="modal" data-target="#formModal">
+                                   <i class="fa fa-phone"></i><br/><small>Contato</small>
                               </a>
                          </li>                         
                          <li class="nav-item align-self-center list-inline-item">
-                              <a class="nav-link text-danger text-center small" href="menu.html">
-                                   <i class="fa fa-cutlery d-md-none"></i><br/><small>Cardápio</small>
+                              <a class="nav-link text-hako text-center small" href="menu.html">
+                                   <i class="fa fa-cutlery"></i><br/><small>Cardápio</small>
                               </a>
                          </li>
                     </ul>
@@ -256,6 +258,9 @@
           </header>
 
           <main>
+               
+          </main>
+          <main class="d-none">
                <div id="myCarousel" class="carousel slide carousel-fade pt-5 bg-hako d-none d-md-block" data-ride="carousel">
                     <div class="carousel-inner">
                          <div class="carousel-item active">
@@ -290,7 +295,7 @@
                                         <div class="row align-items-center">
                                              <div class="offset-md-2 col-md-5 col-12 order-md-1 order-2">
                                                   <h4 class="display-4">Pedidos via Whatsapp</h4>
-                                                  <a class="btn btn-light" href="https://wa.me/(47)%2098810-2973%20?text=Quero%20fazer%20um%20pedido" target="_blank">Peça Já</a>
+                                                  <a class="btn btn-light" href="https://wa.me/(47)%2098810-2973%20?text=Quero%20fazer%20um%20pedido" target="_blank">PEÇA JÁ</a>
                                              </div>
                                              <div class="col-md-4 col-12 order-md-2 order-1"><img src="img/celular-whatsapp-1.jpg" class="mx-auto" alt="slide"></div>
                                         </div>
@@ -393,20 +398,25 @@
                     </div>
                </div>
           </main>
-          <footer class="pb-4 pb-md-0">
-               <div class="jumbotron mb-md-0 bg-secondary text-white">
+          <footer>
+               <div class="jumbotron mb-0 pb-2 bg-secondary text-white">
                     <div class="container text-center">
                          <div class="row">
                               <div class="col">
-                                   <img src="img/logo.png" class=""/>
+                                   <img src="img/logo.png" width="200px"/>
                                    <div class="btn-group-lg my-3">
-                                        <a class="btn btn-hako text-white"><i class="fa fa-lg fa-facebook-square"></i></a>
-                                        <a class="btn btn-hako text-white"><i class="fa fa-lg fa-instagram"></i></a>
+                                        <a class="btn btn-hako text-white" href="https://www.facebook.com/HakoSushiDelivery/" target="_blank">
+                                             <i class="fa fa-lg fa-facebook-square"></i>
+                                        </a>
+                                        <a class="btn btn-hako text-white" href="https://www.instagram.com/hakosushiblumenau/" target="_blank">
+                                             <i class="fa fa-lg fa-instagram"></i>
+                                        </a>
                                         <a href="#" class="btn btn-hako text-white" data-toggle="modal" data-target="#mapModal">
                                              <i class="fa fa-lg fa-map-marker"></i>
                                         </a>
-                                        <a class="btn btn-hako text-white"><i class="fa fa-lg fa-whatsapp"></i></a>
-                                        <a class="btn btn-hako text-white"><i class="fa fa-lg fa-envelope"></i></a>
+                                        <a class="btn btn-hako text-white" href="#" data-toggle="modal" data-target="#formModal">
+                                             <i class="fa fa-lg fa-envelope"></i>
+                                        </a>
                                    </div>
                                    <p><i class="fa fa-map-marker">&nbsp;&nbsp;&nbsp;</i>Rua Avenida Lisboa, 85 – Itoupava Norte – Blumenau – SC</p>
                                    <p><i class="fa fa-phone">&nbsp;&nbsp;&nbsp;</i>Telefone: (47)3397-7513</p>
@@ -414,13 +424,17 @@
                                    <p><i class="fa fa-clock-o">&nbsp;&nbsp;&nbsp;</i>Segunda a Domingo das 17h às 23h</p>
                                    <p><i class="fa fa-envelope-o">&nbsp;&nbsp;&nbsp;</i>blumenau@hakosushi.com.br</p>
                                    <p><i class="fa fa-map-marker">&nbsp;&nbsp;&nbsp;</i>CNPJ: 14.600.897/0001-07</p>
+                                   <p>Copyright © 2019 Hako Sushi. Todos os direitos reservados.</p>
                               </div>
                          </div>
                     </div>
                </div>
           </footer>
+          <div class="container-fluid bg-hako pb-4 pb-md-0 mb-5 mb-md-0 text-center">
+               <a href="https://wagner-sousa.github.io/" class="text-decoration-none text-white w-100">Desenvolvido por Wagner Sousa</a>
+          </div>
 
-          <!-- Modal -->
+          <!-- Modal Map -->
           <div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
@@ -434,9 +448,67 @@
                     </div>
                </div>
           </div>
+          <!-- Modal Form -->
+          <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                         <div class="modal-body">
+
+                              <form novalidate>
+                                   <div class="mb-3 lead font-weight-bold">Fale Conosco</div>
+                                   <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="Nome" required/>
+                                   </div>
+                                   <div class="mb-3">
+                                        <input type="email" class="form-control" placeholder="Email" required/>
+                                   </div>
+                                   <div class="mb-3">
+                                        <input type="tel" class="form-control" placeholder="Telefone" required/>
+                                   </div>
+                                   <div class="mb-3">
+                                        <textarea class="form-control" placeholder="Mensagem" rows="5" required></textarea>
+                                   </div>
+
+                                   <div class="mb-3">
+                                        <input type="submit" class="btn btn-hako" value="Enviar"/>
+                                   </div>
+
+                              </form>
+
+                              <button type="button" class="close align-self-center" data-dismiss="modal" aria-label="Close">
+                                   <span aria-hidden="true">&times;</span>
+                              </button>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <!-- Modal About -->
+          <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                         <div class="modal-body">
+                              <div class="container">
+                                   <div class="row">
+                                        <div class="col-md-5">
+                                             <img src="img/fachada.jpg" class="img-fluid d-none d-md-block"/>
+                                        </div>
+                                        <div class="col-md-7">
+                                             <div class="mb-3 lead font-weight-bold">Sobre</div>
+                                             Hako Sushi Blumenau iniciou as atividades em dezembro de 2012, atualmente oferecemos aos clientes o que tem de melhor na culinaria oriental com um cardápio bem variado, sashimi, sushi, temaki, yakisoba, teppan, obento, e acompanhamentos, atendemos entrega, temos atendimento no local, servimos rodizio no sistema de esteira.<br/><br/>
+                                             Nossa Matriz, localizado no vale do Itajaí, conta com uma equipe treinada e qualificada para atender as expectativas de todos os clientes.
+                                             <br/>
+                                             <button type="button" class="close align-self-center" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                             </button>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
 
           <script src="js/jquery.min.js"></script>
           <script src="js/bootstrap.min.js"></script>
      </body>
-
 </html>
